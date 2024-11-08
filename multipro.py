@@ -3,12 +3,12 @@ import multiprocessing as mp
 
 class Multiprocessing:
     def __init__(self):
-        self.job_counter = 0
+        self.job_counter_input = 0
 
     def calculation(self, n):
-        for i in range(n):
+        for input1 in range(n):
             self.job_counter += 1
-            print(self.job_counter)
+            print(self.job_counter_input)
 
 
 cp = Multiprocessing()
